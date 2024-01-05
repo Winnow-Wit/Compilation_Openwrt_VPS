@@ -24,7 +24,7 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci-smartdns-dev' >>feeds.conf.default
 
 rm -rf feeds/packages/net/adguardhome
-sudo mv feeds/kenzo/adguardhome -t feeds/packages/net
+sudo mv /feeds/kenzo/adguardhome -t /feeds/packages/net
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
